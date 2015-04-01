@@ -1,0 +1,15 @@
+<div class="row">
+        
+    <div class="panel-body">
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="video in videos">
+                <a href="#edit/{{video.id}}">{{video.title}}</a>
+                <div class="pull-right action-buttons">
+                    <a href="#edit/{{video.id}}"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a ng-click="remove(video.id)" class="trash"><span class="glyphicon glyphicon-trash"></span></a>
+                </div>
+            </li>
+        </ul>
+    </div>
+                
+</div>
